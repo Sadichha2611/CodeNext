@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./components/PageNotFound";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Courses from "./pages/courses";
+import Courses from "./pages/Courses";
 
 function App() {
   return (
