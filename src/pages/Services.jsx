@@ -10,33 +10,32 @@ function Services() {
               <div className="col-md-6 text-center mb-4 mb-md-0">
                 <img
                   src="/images/services.jpg"
-                  alt="Our Services"
+                  alt="Our Courses"
                   className="img-fluid rounded mb-3"
                   style={{ maxHeight: "250px" }}
                 />
               </div>
               <div className="col-md-6">
-                <h2 className="fw-bold mb-3">Our Services</h2>
+                <h2 className="fw-bold mb-3">What We Provide</h2>
                 <p className="text-muted mb-2">
-                  At <strong>CodeNext</strong>, we offer a wide range of
-                  services to help you succeed in the digital world. Our team of
-                  experts is dedicated to providing top-notch solutions tailored
-                  to your needs.
+                  At <strong>CodeNext</strong>, we focus on making programming
+                  simple, structured, and hands-on. Our learning resources are
+                  designed to help students and professionals master coding step
+                  by step.
                 </p>
                 <p className="text-muted mb-2">
-                  Our services include web development, mobile app development,
-                  digital marketing, and IT consulting. We use the latest
-                  technologies and best practices to ensure your projects are
-                  successful and deliver real value.
+                  We offer beginner to advanced courses in languages like{" "}
+                  <strong>Python, Java, JavaScript, C++, and more</strong>. Each
+                  course includes projects, quizzes, and real-world examples to
+                  strengthen practical skills.
                 </p>
                 <p className="text-muted mb-3">
-                  Whether you're a startup looking to establish your online
-                  presence or an established business aiming to enhance your
-                  digital strategy, we're here to help you every step of the
-                  way.
+                  Whether you're preparing for your first coding job, building
+                  your portfolio, or sharpening your programming knowledge,
+                  CodeNext provides everything you need to grow confidently.
                 </p>
                 <button className="btn btn-primary btn-lg fw-bold">
-                  Learn More
+                  Explore Courses
                 </button>
               </div>
             </div>

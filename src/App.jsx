@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./components/PageNotFound";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Courses from "./pages/courses";
 
 function App() {
   return (
@@ -84,6 +85,16 @@ function App() {
             <Route path="*" element={<PageNotFound />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/register" element={<Register />} />
+            <Route path="/courses" element={<Courses />} />
+
+            <Route
+              path="*"
+              element={
+                <div className="container my-5">
+                  <h2>404 — Page not found</h2>
+                </div>
+              }
+            />
           </Routes>
 
           <div className="row">

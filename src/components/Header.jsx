@@ -8,6 +8,7 @@ function Header() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/service" },
+    { name: "Courses", path: "/courses" },
     { name: "Contact", path: "/contact" },
   ];
 

@@ -33,8 +33,8 @@ function Register() {
     // Password validation
     if (!formData.password) {
       newErrors.password = "Password is required";
-    } else if (formData.password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
+    } else if (formData.password.length < 8) {
+      newErrors.password = "Password must be at least 8 characters";
     }
 
     // Confirm password validation
@@ -66,15 +66,17 @@ function Register() {
     <div className="container my-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <div className="card shadow-lg p-4">
+          <div className="card shadow-lg p-4 rounded-4 border-0">
             <div className="text-center mb-4">
               <img
                 src="/images/register.jpg"
                 alt="Register"
-                className="img-fluid rounded mb-3"
-                style={{ maxHeight: "150px" }}
+                className="img-fluid rounded mb-3 shadow-sm"
+                style={{ maxHeight: "150px", objectFit: "cover" }}
               />
-              <h2 className="fw-bold">Create Account</h2>
+              <h2 className="fw-bold mb-1" style={{ color: "#2C3E50" }}>
+                Create Account
+              </h2>
               <p className="text-muted">Join us and start your journey!</p>
             </div>
 
@@ -109,7 +111,7 @@ function Register() {
                 )}
               </div>
 
-              <div className="mb-3">
+              <div className="mb-3 position-relative">
                 <input
                   type="password"
                   id="password"
@@ -126,7 +128,7 @@ function Register() {
                 )}
               </div>
 
-              <div className="mb-4">
+              <div className="mb-4 position-relative">
                 <input
                   type="password"
                   id="confirmPassword"
@@ -145,14 +147,22 @@ function Register() {
                 )}
               </div>
 
-              <button type="submit" className="btn btn-success w-100 fw-bold">
+              <button
+                type="submit"
+                className="btn btn-primary w-100 fw-bold shadow-sm"
+                style={{ transition: "0.3s" }}
+              >
                 Register
               </button>
             </form>
 
             <p className="text-center text-muted mt-3">
               Already have an account?{" "}
-              <Link to="/login" className="text-decoration-none">
+              <Link
+                to="/login"
+                className="text-decoration-none fw-bold"
+                style={{ color: "#007BFF" }}
+              >
                 Login here
               </Link>
             </p>
